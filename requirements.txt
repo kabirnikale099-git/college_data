@@ -1,4 +1,3 @@
-python
 streamlit
 sqlite3
 pandas
