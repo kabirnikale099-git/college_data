@@ -1,0 +1,7 @@
+python
+streamlit
+sqlite3
+pandas
+pyMuPDF
+Playwright
+beautifulsoup4
