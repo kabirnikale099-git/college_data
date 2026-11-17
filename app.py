@@ -24,6 +24,8 @@ def init_db():
       " designation TEXT, photo_path TEXT, doc_image_path TEXT, full_details"
       " TEXT)"
   )
+    cursor.execute("UPDATE teachers SET photo_path = REPLACE(photo_path, '\\', '/')")
+  cursor.execute("UPDATE teachers SET doc_image_path = REPLACE(doc_image_path, '\\', '/')")
   cursor.execute("PRAGMA table_info(teachers)")
   cols = [row[1] for row in cursor.fetchall()]
   new_cols = {
